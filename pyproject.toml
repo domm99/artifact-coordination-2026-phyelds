@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "experiments-2025-TCD-marl-neighbor-TL"
+name = "Coordination-2026-Artifact-Phyelds"
 version = "0.1.0"
 description = ""
 authors = ["Davide Domini <davide.domini@unibo.it>"]
