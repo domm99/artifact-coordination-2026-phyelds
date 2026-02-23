@@ -1,3 +1,18 @@
+## [1.1.0](https://github.com/domm99/artifact-coordination-2026-phyelds/compare/1.0.2...1.1.0) (2026-02-23)
+
+### Features
+
+* add all services ([3bd3adb](https://github.com/domm99/artifact-coordination-2026-phyelds/commit/3bd3adb66dadf1280b966b81cb36425b30b0872c))
+
+### Bug Fixes
+
+* install system dependencies ([ed26f42](https://github.com/domm99/artifact-coordination-2026-phyelds/commit/ed26f42fff129bafda67bf23d4ea2f7d8dd2fa11))
+* update output dir ([1d0ec18](https://github.com/domm99/artifact-coordination-2026-phyelds/commit/1d0ec18e9d14b53153f5a56848a1f4d1e669ec07))
+
+### General maintenance
+
+* **release:** update .env versions to 1.0.2 [skip ci] ([0d4322f](https://github.com/domm99/artifact-coordination-2026-phyelds/commit/0d4322fc2637f265adde4fb3bb26b73eed3543bf))
+
 ## [1.0.2](https://github.com/domm99/artifact-coordination-2026-phyelds/compare/1.0.1...1.0.2) (2026-02-23)
 
 ### Bug Fixes
