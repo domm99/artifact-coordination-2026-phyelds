@@ -5,30 +5,41 @@ services:
     image: davidedomini99/artifact-coordination-2026-phyelds:${version-latest}
     build:
       context: .
-      dockerfile: docker/sim/Dockerfile
-#    volumes:
-#      - davide.domini-volume:/experiment/data
+      dockerfile: docker/Dockerfile
+    volumes:
+      - ./output:/experiment/output
     environment:
       - TASK=src/patterns/channel.py
 
   experiment-scr:
     hostname: scr
     image: davidedomini99/artifact-coordination-2026-phyelds:${version-latest}
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
     volumes:
-      - davide.domini-volume:/experiment/data
+      - ./output:/experiment/output
     environment:
       - TASK=src/patterns/scr.py
 
-#  experiment-fbfl:
-#    hostname: fbfl
-#    image: davidedomini99/artifact-coordination-2026-phyelds:${version-latest}
-#    volumes:
-#      - davide.domini-volume:/experiment/data
-#    environment:
-#      DATA_OWNER: 1000:1000
-#      LEARNING_HYPERPARAMETERS: |
-#        all:
-#          environment: SimpleSpread
-#          transfer_enabled: True
-#          restricted_communication: True
-#          max_seed: 3
+  experiment-fbfl:
+    hostname: fbfl
+    image: davidedomini99/artifact-coordination-2026-phyelds:${version-latest}
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    volumes:
+      - ./output:/experiment/output
+    environment:
+      - TASK=src/fl/simulation.py
+
+  experiment-vmas-flocking:
+    hostname: vmas-flocking
+    image: davidedomini99/artifact-coordination-2026-phyelds:${version-latest}
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    volumes:
+      - ./output:/experiment/output
+    environment:
+      - TASK=src/vmas-integration/VicsekFlocking.py
