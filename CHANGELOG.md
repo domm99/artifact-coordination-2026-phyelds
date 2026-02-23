@@ -1,3 +1,13 @@
+## [1.0.1](https://github.com/domm99/artifact-coordination-2026-phyelds/compare/1.0.0...1.0.1) (2026-02-23)
+
+### Bug Fixes
+
+* **deps:** add ffmpeg ([2aec95f](https://github.com/domm99/artifact-coordination-2026-phyelds/commit/2aec95f704f248378e46c180443ad401ff1896b3))
+
+### General maintenance
+
+* **release:** update .env versions to 1.0.0 [skip ci] ([61d1cda](https://github.com/domm99/artifact-coordination-2026-phyelds/commit/61d1cdacbaf17c7e4e9e3076cb60cc2adf350a40))
+
 ## 1.0.0 (2026-02-23)
 
 ### Features
