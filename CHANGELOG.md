@@ -1,3 +1,13 @@
+## [1.0.2](https://github.com/domm99/artifact-coordination-2026-phyelds/compare/1.0.1...1.0.2) (2026-02-23)
+
+### Bug Fixes
+
+* install system libraries for matplotlib ([1269663](https://github.com/domm99/artifact-coordination-2026-phyelds/commit/126966349bc230870ef6f96592f64928cb015829))
+
+### General maintenance
+
+* **release:** update .env versions to 1.0.1 [skip ci] ([1cc7b1b](https://github.com/domm99/artifact-coordination-2026-phyelds/commit/1cc7b1baa480debd0fba4c09d2c18ab43e49c7d1))
+
 ## [1.0.1](https://github.com/domm99/artifact-coordination-2026-phyelds/compare/1.0.0...1.0.1) (2026-02-23)
 
 ### Bug Fixes
