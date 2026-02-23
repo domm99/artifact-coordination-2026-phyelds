@@ -66,9 +66,9 @@ def run_simulation(threshold, number_subregions, seed):
             max_time=NUMBER_OF_ROUNDS,
             seed = seed)
 
-    config = ExporterConfig('data/', f'federations_seed-{seed}_regions-{number_subregions}', [], [], 3)
+    config = ExporterConfig('output/', f'federations_seed-{seed}_regions-{number_subregions}', [], [], 3)
     simulator.schedule_event(0.96, federations_count_csv_exporter, simulator, 1.0, config)
-    config = ExporterConfig('data/', f'experiment_seed-{seed}_regions-{number_subregions}_', ['TrainLoss', 'ValidationLoss', 'ValidationAccuracy'], ['mean', 'std', 'min', 'max'], 3)
+    config = ExporterConfig('output/', f'experiment_seed-{seed}_regions-{number_subregions}_', ['TrainLoss', 'ValidationLoss', 'ValidationAccuracy'], ['mean', 'std', 'min', 'max'], 3)
     simulator.schedule_event(1.0, csv_exporter, simulator, 1.0, config)
     simulator.add_monitor(TestSetEvalMonitor(simulator))
     simulator.run(NUMBER_OF_ROUNDS)
@@ -78,7 +78,7 @@ def run_simulation(threshold, number_subregions, seed):
 threshold = 40.0
 areas = 3
 seed = 42
-experiment_log_dir = 'finished-experiments/'
+experiment_log_dir = 'output/finished-experiments/'
 
 data_dir = Path(experiment_log_dir)
 data_dir.mkdir(parents=True, exist_ok=True)

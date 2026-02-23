@@ -46,7 +46,7 @@ CustomRenderMonitor(
     RenderConfig(
         effects=[CustomDrawEdges(), CustomDrawNodes(color_from="result")],
         mode=RenderMode.SAVE,
-        save_as="channel.mp4",
+        save_as="output/channel.mp4",
         dt=0.1
     )
 )

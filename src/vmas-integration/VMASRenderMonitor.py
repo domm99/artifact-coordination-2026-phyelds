@@ -11,15 +11,18 @@ class VMASRenderMonitor(Monitor):
         self.config = config
         self.simulator = simulator
         self.frames = []
+        self.tick = 0
 
     def update(self):
-        f = self.simulator.environment.vmas_environment.render(mode="rgb_array")
-        self.frames.append(f)
+        if self.tick % 20 == 0:
+            f = self.simulator.environment.vmas_environment.render(mode="rgb_array")
+            self.frames.append(f)
+        self.tick += 1
 
     def on_finish(self):
         imageio.mimsave(f"{self.config.save_as}.gif", self.frames, fps=20)
 
         for index, frame in enumerate(self.frames):
             img = Image.fromarray(frame)
-            name = f'frame-{index:04d}.pdf'
+            name = f'output/frame-{index:04d}.pdf'
             img.save(name, resolution=500)

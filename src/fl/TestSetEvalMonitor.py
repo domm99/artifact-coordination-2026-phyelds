@@ -19,4 +19,4 @@ class TestSetEvalMonitor(Monitor):
             accuracies.append(accuracy)
 
         df = pd.DataFrame({ 'Accuracy': [sum(accuracies)/len(accuracies)] })
-        df.to_csv(f'data/test_{experiments_hyperparams}.csv', index=False)
+        df.to_csv(f'output/test_{experiments_hyperparams}.csv', index=False)
