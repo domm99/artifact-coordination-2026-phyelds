@@ -1,3 +1,13 @@
+## [1.1.1](https://github.com/domm99/artifact-coordination-2026-phyelds/compare/1.1.0...1.1.1) (2026-02-24)
+
+### Bug Fixes
+
+* remove useless folder creation ([0307430](https://github.com/domm99/artifact-coordination-2026-phyelds/commit/0307430ce9fba2af34e7df6fb944fae98db74688))
+
+### General maintenance
+
+* **release:** update .env versions to 1.1.0 [skip ci] ([f5e8106](https://github.com/domm99/artifact-coordination-2026-phyelds/commit/f5e810649115170fe63142cefaaa82d2cbbaf765))
+
 ## [1.1.0](https://github.com/domm99/artifact-coordination-2026-phyelds/compare/1.0.2...1.1.0) (2026-02-23)
 
 ### Features
