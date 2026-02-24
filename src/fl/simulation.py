@@ -78,10 +78,6 @@ def run_simulation(threshold, number_subregions, seed):
 threshold = 40.0
 areas = 3
 seed = 42
-experiment_log_dir = 'output/finished-experiments/'
-
-data_dir = Path(experiment_log_dir)
-data_dir.mkdir(parents=True, exist_ok=True)
 
 df = pd.DataFrame(columns=['timestamp', 'experiment'])
 
